@@ -13,7 +13,9 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
         temurin-21-jdk \
         lsof curl openssl git tar sqlite3 \
-        fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
+        fontconfig libfreetype6 tzdata iproute2 libstdc++6 locales \
+    && sed -i '/en_US.UTF-8/s/^# //' /etc/locale.gen \
+    && locale-gen \
     && apt-get purge -y wget apt-transport-https gpg \
     && apt-get autoremove -y \
     && apt-get clean \
@@ -22,7 +24,7 @@ RUN apt-get update -y \
 RUN useradd -d /home/container -m container
 
 USER container
-ENV USER=container HOME=/home/container
+ENV USER=container HOME=/home/container LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US:en
 WORKDIR /home/container
 
 COPY --chown=container:container --chmod=755 entrypoint.sh /entrypoint.sh

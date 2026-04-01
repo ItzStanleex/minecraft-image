@@ -1,0 +1,4 @@
+Java 17|ghcr.io/itzstanleex/minecraft:java17
+Java 21|ghcr.io/itzstanleex/minecraft:java21
+Java 22|ghcr.io/itzstanleex/minecraft:java22
+Java 24|ghcr.io/itzstanleex/minecraft:java24
