@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sfL https://raw.githubusercontent.com/pterodactyl/yolks/master/java/8/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/ptero-eggs/yolks/main/java/8/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/pterodactyl/yolks/master/java/11/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/ptero-eggs/yolks/main/java/11/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/pterodactyl/yolks/master/java/17/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/ptero-eggs/yolks/main/java/17/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/pterodactyl/yolks/master/java/21/Dockerfile)",
+      "Bash(curl -sfL https://raw.githubusercontent.com/ptero-eggs/yolks/main/java/21/Dockerfile)",
+      "Bash(git config:*)",
+      "Bash(chmod:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
