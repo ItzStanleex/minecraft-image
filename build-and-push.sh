@@ -3,7 +3,7 @@ set -e
 
 REGISTRY="ghcr.io/itzstanleex"
 IMAGE_NAME="minecraft"
-JAVA_VERSIONS=("java17" "java21" "java22" "java24")
+JAVA_VERSIONS=("java17" "java21" "java22" "java24" "java25" "java26")
 
 echo "=== Building and pushing Minecraft Docker images ==="
 echo "Registry: ${REGISTRY}/${IMAGE_NAME}"

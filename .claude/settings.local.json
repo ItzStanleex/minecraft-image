@@ -11,7 +11,9 @@
       "Bash(curl -sfL https://raw.githubusercontent.com/ptero-eggs/yolks/main/java/21/Dockerfile)",
       "Bash(git config:*)",
       "Bash(chmod:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(docker run:*)",
+      "Bash(bash:*)"
     ]
   }
 }
